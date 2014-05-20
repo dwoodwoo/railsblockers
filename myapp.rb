@@ -24,33 +24,33 @@ get '/doo' do
 end
 
 get '/noo/:id' do
-  'noo is :id'
+  'variable is :id'
 end
 
 get '/boo/:id' do
-  'boo is #{:id}'
+  'variable is #{:id}'
 end
 
 
 get '/zoo/:id' do
-  "zoo is #{params[:id]}"
+  "variable is #{params[:id]}"
 end
 # ah, finally
 
 
 # nothing magic here...you can call it anything...
 get '/loo/:house' do
-  "loo is #{params[:house]}"
+  "variable is #{params[:house]}"
 end
 
 # but it needs to match
 get '/too/:starship' do
-  "too is #{params[:house]}"
+  "variable is #{params[:house]}"
 end
 
 # why doesn't anybody ever mention name-value pairs?
 get '/woo/:id' do
-  "woo is #{params[:id]}, <br>
+  "variable is #{params[:id]}, <br>
   house = #{params[:house]}, <br>
   starship = #{params[:starship]}, <br>
   params are: #{params.inspect}
