@@ -1,5 +1,7 @@
 # myapp.rb
-# require 'rubygems'
+# go to your command line
+# type 'gem install sinatra'
+# type 'ruby myapp.rb'
 require 'sinatra'
 
 enable :sessions
