@@ -139,14 +139,15 @@ get '/monkey/:dancemove' do
 end
 
 
-get '/lunky/:dancemove' do
-  def ampitup(mymove)
+get '/lunky/:dancemove' do  # In Rails, request comes in on a ROUTE...
+  def ampitup(mymove)       # runs on some CONTROLLER CODE
     mymove.upcase * 7
   end
   dancemove = params[:dancemove]
   @amped_up_dancemove = ampitup(dancemove)
-  erb :lunky
+  erb :lunky                # then goes to an ERB file
 end
+
 
 
 
