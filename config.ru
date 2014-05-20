@@ -1,2 +1,2 @@
-require './hi'
+require './myapp.rb'
 run Sinatra::Application
