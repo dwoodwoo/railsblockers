@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Railsschool.org - Rails Learning Blockers</title>
+
+        <link rel="stylesheet" href="./css/reveal.css">
+		<link rel="stylesheet" href="./css/mygifs.css">
+		<link rel="stylesheet" href="./css/theme/default.css" id="theme">
+
+
+        <link rel="stylesheet" href="./lib/css/zenburn.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+      <section>
+        <h1>
+          Rails Learning Stoppers
+        </h1>
+        <h3>
+          If Rails is supposed to be easy to learn, why am I having such difficulty?
+        </h3>
+      </section>
+
+      <section>
+        <h2>Me</h2>
+
+        <p><img src="./images/dwoo.jpg" style="width: 15%; height: 15%; border-radius: 50%;"></p>
+        <p>Dennis Woo</p>
+        <div class="fragment">
+          <p>@dwoodwoo</p>
+          <p>dennis@railsschool.org</p>
+        </div>
+        <p class="fragment">"I like making things dynamic."</p>
+      </section>
+
+        <section>
+        <h2>You</h2>
+        <p><img src="./images/pokerface.jpg" style="width: 15%; height: 15%; border-radius: 50%;"></p>
+
+<p class="fragment">totally new to programming</p>
+<p class="fragment">new to ruby on rails</p>
+<p class="fragment">have done at least one rails tutorial</p>
+<p class="fragment">at least somewhat confused</p>
+
+      </section>
+
+      <section>
+
+<h3>some of my heroes</h3>
+<p><img src="./images/cersei.jpg" style="width: 15%; height: 15%; border-radius: 50%;" class="fragment roll-in">
+<img src="./images/spock.jpg" style="width: 15%; height: 15%; border-radius: 50%;" class="fragment roll-in">
+<img src="./images/skrillex.jpg" style="width: 15%; height: 15%; border-radius: 50%;" class="fragment roll-in"></p>
+
+      </section>
+
+      <section>
+        <h2>Ruby on Rails is EASY, right?</h2>
+        <h3>Why do we think so?</h3>
+
+          <p class="fragment">Cool, cute name => easy language?</p>
+          <p class="fragment">Promise of snap-together pieces</p>
+
+        <p>
+          <img class="fragment" src="./images/ikea.jpg">
+        </p>
+      </section>
+
+      <section>
+        <!-- <h2>Ruby on Rails is EASY, right?</h2> -->
+        <p>
+          <iframe width="560" height="315" src="http://www.youtube.com/embed/iFwFvYLMiGo" frameborder="0" allowfullscreen></iframe>
+        </p>
+
+        <p>
+          <a href="https://www.youtube.com/watch?v=iFwFvYLMiGo" target=_blank>"I learned Ruby on Rails over a weekend when I was 17."</a>
+        </p>
+
+        <p>HBO's <i>Silicon Valley</i></p>
+      </section>
+
+
+
+      <section>
+        <img src="../images/penumbra.jpg">
+      </section>
+
+      <section>
+
+
+
+<p>
+<blockquote>"...And this, I think, is <b>where Ruby shines</b>: Imagine that you’re cooking. But instead of following the recipe step-by-step and hoping for the best, you can actually take ingredients in and out of the pot whenever you want.<br><br>...It’s no longer just a linear process ending in success or (mostly, for me) frustrating failure... <br><br><b>It’s play</b>."</blockquote></p>
+
+<p>from <i>Mr Penumbra's 24 Hour Bookstore</i></p>
+
+<p class="fragment">a work of fiction</p>
+
+
+      </section>
+
+<section>
+<h2>Ruby on Rails is in fact somewhat big...</h2>
+
+<p>
+  <a href="https://dgosxlrnzhofi.cloudfront.net/custom_page_images/production/64/page_images/Rails_Competencies.png?1386276348" target=_blank><img src="https://dgosxlrnzhofi.cloudfront.net/custom_page_images/production/64/page_images/Rails_Competencies.png?1386276348" width=25% height=25%>
+<br>
+<br>
+  Ruby on Rails Competencies</a>
+</p>
+
+
+<p class="fragment">Big and powerful.</p>
+
+</section>
+
+<section data-background="./images/gif/jaeger.gif"  data-background-size="800px" data-background-transition="slide">
+<h3>rails new myApp</h3>
+<h3>bundle install</h3>
+  <!-- <img src="./images/gif/jaeger.gif" style="height:75%;width:75%"> -->
+</section>
+
+<section data-background="./images/gif/slap.gif" data-background-size="800px" data-background-transition="slide">
+<h3>But we shouldn't let big scare us...</h3>
+</section>
+
+
+<section>
+
+<p>
+  <a href="http://winteriscoming.net/wp-content/uploads/2011/05/GameOfThronesInfogramWithFaces.jpg" target=_blank><img src="http://winteriscoming.net/wp-content/uploads/2011/05/GameOfThronesInfogramWithFaces.jpg" width=35% height=35%>
+  <br><br>
+  Consider: Game of Thrones Relationships</a>
+</p>
+
+<p class="fragment">Think of the time and emotional investment you make to learn a world like Game of Thrones.</p>
+<p class="fragment">Think of a similar investment in Rails.</p>
+</section>
+
+
+
+<section>
+<h3>Let's pare down the learning tree</h3>
+  <img src="./images/gif/joffrey.gif" style="width:50%; height:50%;">
+</section>
+
+
+<section>
+<h3>Things Overemphasized in Picking Up RoR</h3>
+
+<p>Many resources (Hartl, Agile Web Development with Rails) put emphasis on the <b>total devops workflow</b>.</p>
+
+<pre class="fragment"><code data-trim contenteditable>
+* Git/Version Control
+* Test-Driven Development (RSpec, Spork, Cucumber)
+* Javascript
+* JQuery
+* AJAX
+* Coffeescript
+* HAML or any other templating
+* Environment setup, RVM or RBENV
+* Your IDE or Editor, textmate or sublime text
+* CSS, including Twitter Bootstrap
+* SASS
+* JSON, YAML
+* Factories
+* Agile workflow
+* Bundler
+* Rake
+</code></pre>
+
+
+<p class="fragment">This is good form and you SHOULD learn it...</p>
+
+</section>
+
+<section data-background="./images/gif/spockzap.gif" data-background-size="800px" data-background-transition="slide">
+</section>
+
+<section>
+
+<h2>Good form...</h2>
+<p>...but bad for learning the ESSENTIALS for Rails and the web stack.</p>
+<p class="fragment">Reread later.</p>
+</section>
+
+<section data-background="./images/gif/eyebrow.gif" data-background-size="800px" data-background-transition="slide">
+<h3>fascinating</h3>
+</section>
+
+
+<section>
+
+<h2>What SHOULD be emphasized (IMHO)</h2>
+<p class="fragment">Getting data in and out of your web application</p>
+
+<ul>
+<li class="fragment">Routes</li>
+<li class="fragment">How to GET and POST data from the web to your app</li>
+<li class="fragment">How to manipulate data in a database from your app</li>
+<li class="fragment">How 3 items above form Model-View-Controller</li>
+<br>
+<li class="fragment">It turns out Sinatra allows you to do this in a single page (well, maybe two pages)</li>
+</ul>
+
+</section>
+
+<section data-background-transition="slide">
+<img src="./images/mvc.jpg" style="width: 90%; height: 90%; border-radius:15px;">
+</section>
+
+<section data-background="./images/gif/cersei.gif" data-background-size="800px" data-background-transition="slide">
+<h2>Let's begin</h2>
+</section>
+
+
+
+<section>
+<h2>
+  Code Walkthrough
+</h2>
+<h4>Routes, Views, Controllers</h4>
+<p>
+  git repo: <a href="https://github.com/dwoodwoo/railsblockers" target=_blank>https://github.com/dwoodwoo/railsblockers</a>
+</p>
+
+<p>
+  <a href="https://raw.githubusercontent.com/dwoodwoo/railsblockers/master/myapp.rb" target=_blank>myapp.rb raw code</a>
+</p>
+
+<p>
+  <a href="https://raw.githubusercontent.com/dwoodwoo/railsblockers/master/myform.html" target=_blank>myform.html raw code</a>
+</p>
+</section>
+
+<section>
+<h2>
+  Code Walkthrough
+</h2>
+
+<h4>Model/Database</h4>
+<p>
+  git repo: <a href="https://github.com/dwoodwoo/railsblockers" target=_blank>https://github.com/dwoodwoo/railsblockers</a>
+</p>
+
+<p>
+  <a href="https://raw.githubusercontent.com/dwoodwoo/railsblockers/master/mydbdemo.rb" target=_blank>mydbdemo.rb raw code</a>
+</p>
+
+</section>
+
+<section data-background="./images/gif/stephanie.gif" data-background-size="800px" data-background-transition="slide">
+thanks!
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+		</div>
+
+		<script src="./lib/js/head.min.js"></script>
+		<script src="./js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+        multiplex: {
+          // Example values. To generate your own, see the socket.io server instructions.
+          secret: '14005046542939918066', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+          id: '471f881fd6b9527c', // Obtained from socket.io server
+          url: 'revealjs.jit.su:80' // Location of socket.io server
+        },
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+          { src: 'plugin/multiplex/master.js', async: true }
+
+
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

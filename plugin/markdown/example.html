@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Markdown Demo</title>
+
+        <link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/mygifs.css">
+		<link rel="stylesheet" href="../../css/theme/default.css" id="theme">
+
+
+        <link rel="stylesheet" href="../../lib/css/zenburn.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+                <!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+                <section data-markdown data-separator="^\n---\n$" data-vertical="^\n--\n$">
+                    <script type="text/template" type>
+##Rails Learning Stoppers
+###If Rails is supposed to be easy to learn, why am I having such difficulty?
+
+---
+
+##Me
+
+<img src="../../images/dwoo.jpg" style="width: 15%; height: 15%; border-radius: 50%;">
+
+Dennis Woo
+
+@dwoodwoo
+
+dennis@railsschool.org
+
+---
+
+###some of my heroes
+<img src="../../images/cersei.jpg" style="width: 15%; height: 15%; border-radius: 50%;"><!-- .element: class="fragment" -->
+<img src="../../images/spock.jpg" style="width: 15%; height: 15%; border-radius: 50%;"><!-- .element: class="fragment" -->
+<img src="../../images/skrillex.jpg" style="width: 15%; height: 15%; border-radius: 50%;"><!-- .element: class="fragment" -->
+
+---
+
+##Ruby on Rails is EASY, right?
+###Why do we think so?
+* Cool, cute name => easy language? <!-- .element: class="fragment" -->
+* Promise of snap-together pieces<!-- .element: class="fragment"-->
+
+<img src="../../images/ikea.jpg"><!-- .element: class="fragment"-->
+
+---
+
+##Ruby on Rails is EASY, right?
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/iFwFvYLMiGo" frameborder="0" allowfullscreen></iframe>
+
+<a href="https://www.youtube.com/watch?v=iFwFvYLMiGo" target=_blank>"I learned Ruby on Rails over a weekend when I was 17."</a>
+
+(Silicon Valley)
+
+---
+
+##Ruby on Rails is EASY, right?
+
+
+> ...And this, I think, is **where Ruby shines**: Imagine that you’re cooking. But instead of following the recipe step-by-step and hoping for the best, you can actually take ingredients in and out of the pot whenever you want. ...It’s no longer just a linear process ending in success or (mostly, for me) frustrating failure... **It’s play**.
+
+from Mr Penumbra's 24 Hour Bookstore<!-- .element: class="fragment"-->
+
+a work of fiction<!-- .element: class="fragment"-->
+
+---
+
+##Ruby on Rails is in fact somewhat big...
+
+
+<a href="https://dgosxlrnzhofi.cloudfront.net/custom_page_images/production/64/page_images/Rails_Competencies.png?1386276348" target=_blank><img src="https://dgosxlrnzhofi.cloudfront.net/custom_page_images/production/64/page_images/Rails_Competencies.png?1386276348" width=25% height=25%>
+
+Ruby on Rails Competencies</a>
+
+
+Looks complicated.<!-- .element: class="fragment"-->
+
+---
+
+##But we shouldn't let big scare us...
+
+<a href="http://winteriscoming.net/wp-content/uploads/2011/05/GameOfThronesInfogramWithFaces.jpg" target=_blank><img src="http://winteriscoming.net/wp-content/uploads/2011/05/GameOfThronesInfogramWithFaces.jpg" width=35% height=35%>
+
+Game of Thrones Relationships</a>
+
+Think of the time and emotional investment you make to learn a world like Game of Thrones.<!-- .element: class="fragment"-->
+
+Think of a similar investment in Rails.<!-- .element: class="fragment"-->
+
+
+---
+
+##Let's pare down the learning tree
+
+
+---
+
+###Things Overemphasized in Picking Up RoR
+
+Many resources (Hartl, Agile Web Development with Rails) put emphasis on the *total devops workflow*.
+
+
+This is good form...<!-- .element: class="fragment"-->
+
+```
+* Git/Version Control
+* Test-Driven Development (RSpec, Spork, Cucumber)
+* Javascript
+* JQuery
+* Coffeescript
+* HAML or any other templating
+* Environment setup, RVM or RBENV
+* Your IDE or Editor, textmate or sublime text
+* CSS, including Twitter Bootstrap
+* SASS
+* YAML
+* Factories
+* Agile workflow
+```
+<!-- .element: class="fragment"-->
+
+but bad for learning the ESSENTIALS for Rails and the web stack.<!-- .element: class="fragment"-->
+
+Reread later.<!-- .element: class="fragment"-->
+
+
+---
+
+###3 Preface Items in Picking Up RoR
+Some unavoidable learning
+
+---
+
+1: Ruby is a language. Rails is a framework.
+<br><br>
+
+* Plan to learn at least a little Ruby<!-- .element: class="fragment"-->
+<br><br>
+
+<span>Tip: Even half of <a href="http://www.codecademy.com/tracks/ruby" target=_blank>Codecademy's online ruby course</a> is probably enough.  Or do a Railsschool workshop.</span><!-- .element: class="fragment"-->
+
+---
+
+2: Rails database explanations are based on SQL.
+<br><br>
+
+* Plan on learning at least a little SQL<!-- .element: class="fragment"-->
+<br><br>
+
+Tip: Install sqlite3, mysql or postgresql and book learn it.  Introduction to SQL.  About 1-2 weeks. <!-- .element: class="fragment"-->
+
+---
+
+3: Learning web http fundamentals helps.
+<br><br>
+
+* GET, POST, name-value pairs...<!-- .element: class="fragment"-->
+<br><br>
+
+What we're covering today.<!-- .element: class="fragment"-->
+<br><br>
+
+---
+
+##What SHOULD be emphasized (IMHO)
+
+Getting data in and out of your web application<!-- .element: class="fragment"-->
+
+* Routes<!-- .element: class="fragment"-->
+* How to GET and POST data from the web to your app<!-- .element: class="fragment"-->
+* <div>~~How to manipulate data in a database from your app~~</div><!-- .element: class="fragment"-->
+* How 3 items above form Model-View-Controller<!-- .element: class="fragment"-->
+<br><br>
+
+* It turns out Sinatra allows you to do this in a single page (well, maybe two pages)<!-- .element: class="fragment"-->
+
+---
+
+
+Unavoidably...
+<br><br>
+
+A little ruby (symbols vs. local variables vs. instance variables)<!-- .element: class="fragment"-->
+<br><br>
+
+but pleasantly...<!-- .element: class="fragment"-->
+<br><br>
+
+Regular flavored HTML<!-- .element: class="fragment"-->
+
+
+
+                    </script>
+                </section>
+
+
+
+
+
+
+
+
+
+            </div>
+		</div>
+
+		<script src="../../lib/js/head.min.js"></script>
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../../lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: '../highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../notes/notes.js' }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
